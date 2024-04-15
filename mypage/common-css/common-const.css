@@ -1,0 +1,14 @@
+:root {
+    --text-color-blue: #1A8CFE;
+    --text-color-black: #000000;
+    --text-color-gray: #4c4c4cf3;
+    --common-page-bg-color: rgba(243, 246, 248);
+    --tabbar-height: 0.48rem;
+    --common-margin: 0.08rem;
+    --common-padding: 0.06rem;
+    --common-titlebar-height: 0.5rem;
+}
+
+/* 在上述代码中，:root选择器代表最外层元素（在浏览器中即HTML根元素），
+  在这里定义了一个名为--main-text-color的自定义属性，值为#1A8CFE。
+  之后在其他选择器中通过var(--main-text-color)来引用这个自定义属性作为颜色值。 */

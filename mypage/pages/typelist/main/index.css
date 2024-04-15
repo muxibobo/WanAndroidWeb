@@ -1,0 +1,47 @@
+#bottom-tabbar :nth-child(2) p {
+    color: var(--text-color-blue);
+}
+
+#page-content {
+    overflow: hidden;
+    background-color: var(--common-page-bg-color);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#tab-typeinfo-list {
+    overflow-y: scroll;
+}
+
+.type-info-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.16rem;
+    box-shadow: 0 0.04rem 0.05rem rgba(0, 0, 0, 0.2);
+    margin: var(--common-margin);
+    padding: var(--common-padding);
+    border-radius: 0.05rem;
+    background-color: white;
+    align-items: center;
+    cursor: pointer;
+}
+
+.type-info-item-left {
+    text-align: left;
+}
+.type-info-item-left>p {
+   font-weight: bold;
+}
+.type-info-tag {
+    display: inline-block;
+    font-size: 0.10rem;
+    padding: 0.02rem;
+    border: 1px solid var(--text-color-blue);
+    margin-bottom: 0.02rem;
+}
+
+.type-info-item-right {
+    width: 0.2rem;
+    height: 0.2rem;
+}

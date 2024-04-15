@@ -1,0 +1,22 @@
+/* load数据加载动画 */
+@keyframes myRotateAnimation {
+    0% {
+        /* transform: translateX(0); */
+    }
+
+    100% {
+        /* 直接写结束帧关键帧，浏览器会补全过程 */
+        transform: rotate(360deg);
+        /* background-color: #ff97cb;
+        border-radius: 50%; */
+    }
+}
+@keyframes myScaleAnimation {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}

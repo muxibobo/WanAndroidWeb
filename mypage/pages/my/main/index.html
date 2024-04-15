@@ -1,0 +1,91 @@
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no" />
+    <title>我的</title>
+    <link rel="stylesheet" href="../../../../mypage/common-css/common-const.css">
+    <link rel="stylesheet" href="../../../../mypage/common-css/reset.css">
+    <link rel="stylesheet" href="../../../../mypage/common-css/common-tabbar.css">
+    <link rel="stylesheet" href="../../../../mypage/common-css/common-animation.css">
+    <link rel="stylesheet" href="./index.css">
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../../../mypage/common-js/myPhoneFlexible.js"></script>
+    <script src="../../../../mypage/common-js/appConstData.js"></script>
+    <script src="../../../../mypage/utils/DataUtil.js"></script>
+    <script src="../../../../mypage/components/myAlertDialog.js"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <div id="page-root">
+        <div id="page-content">
+            <!-- 我的页面 -->
+            <div id="my-info">
+                <img id="my-avatar-img" src="../../../../img/icon_user_boy.png" alt="">
+                <p id="my-avatar-name">未登录</p>
+            </div>
+            <div id="my-info-list">
+                <div class="my-info-item" id="go-collect-list">
+                    <img src="../../../../img/blue128/shoucangxian.png" alt="">
+                    <span>我的收藏</span>
+                    <img src="../../../../img/black128/ic_item_tag_right.png" alt="">
+                </div>
+                <div class="my-info-item">
+                    <img src="../../../../img/blue128/liuyanxian.png" alt="">
+                    <span>我的消息</span>
+                    <img src="../../../../img/black128/ic_item_tag_right.png" alt="">
+                </div>
+                <div class="my-info-item">
+                    <img src="../../../../img/blue128/kaquanxian.png" alt="">
+                    <span>优惠券</span>
+                    <img src="../../../../img/black128/ic_item_tag_right.png" alt="">
+                </div>
+                <div class="my-info-item" id="go-about">
+                    <img src="../../../../img/blue128/bixian.png" alt="">
+                    <span>关于demo</span>
+                    <img src="../../../../img/black128/ic_item_tag_right.png" alt="">
+                </div>
+                <div class="my-info-item" id="go-login-out">
+                    <img src="../../../../img/blue128/fenxiangxian.png" alt="">
+                    <span>退出登录</span>
+                    <img src="../../../../img/black128/ic_item_tag_right.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="bottom-tabbar">
+            <a id="home-page-bar" class="default-color" href="../../home/main/index.html">
+                <img id="home-page-img" src="../../../../img/black128/zhuyexian.png" alt="首页" />
+                <p>首页</p>
+            </a>
+            <a id="typelist-page-bar" class="default-color" href="../../typelist/main/index.html">
+                <img id="typelist-page-img" src="../../../../img/black128/wenjianxian.png" alt="体系" />
+                <p>体系</p>
+            </a>
+            <a id="tab-page-bar" class="default-color" href="../../tab/main/index.html">
+                <img id="tab-page-img" src="../../../../img/black128/faxianxian.png" alt="导航" />
+                <p>导航</p>
+            </a>
+            <a id="wxsite-page-bar" class="default-color" href="../../wxsite/main/index.html">
+                <img id="wxsite-page-img" src="../../../../img/black128/wechat.png" alt="公众号" />
+                <p>公众号</p>
+            </a>
+            <a id="my-page-bar" class="default-color" href="../../my/main/index.html">
+                <img id="my-page-img" src="../../../../img/blue128/wodexian.png" alt="我的" />
+                <p>我的</p>
+            </a>
+        </div>
+    </div>
+    <div class="my-alert-dialog-root"></div>
+
+    <script src="./index.js">
+    </script>
+    <script type="module" src="./index-module.js">
+    </script>
+</body>
+
+</html>

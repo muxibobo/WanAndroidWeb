@@ -1,0 +1,45 @@
+#page-root {
+    position: relative;
+    height: 100%;
+    background-color: var(--common-page-bg-color);
+}
+
+#page-content {
+    margin-top: var(--common-titlebar-height);
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 0.1rem;
+}
+
+#about-content-root {
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 0.1rem;
+}
+
+#about-title {
+    font-size: 0.16rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.1rem;
+}
+
+#about-content {
+    font-size: 0.14rem;
+    /* overflow-wrap用来设置一个本来不能断开的字符串中插入换行符， word-wrap与overflow-wrap都可以达到同样的效果 */
+    overflow-wrap: break-word;
+    /*word-break 指定了怎样在单词内断行。对于中文或英文单词，可以使用此规则来强制换行 */
+    word-break: break-word;
+    /* white-space 保留空白符序列，进行换行。属性用于设置如何处理元素内的空白字符。确保换行也能在JSON数据中的任何位置发生  */
+    white-space: pre-wrap;
+    padding: 0 0.1rem;
+}
+.about_img{
+    display: block;
+    width: 2.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+}

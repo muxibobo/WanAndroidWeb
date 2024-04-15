@@ -1,0 +1,50 @@
+
+/*#region--头部titlebar-- */
+#title-bar {
+    width: 100%;
+    height: var(--common-titlebar-height);
+    background-color: white;
+    border-bottom: 1px solid var(--common-page-bg-color);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+#title-bar-back {
+    width: calc(var(--common-titlebar-height) + 0.2rem);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#title-bar-back>img {
+    width: 0.25rem;
+    height: 0.25rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#title-bar-name {
+    flex: 1;
+    height: 100%;
+    display: inline-block;
+    color: black;
+    font-size: 0.16rem;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: calc(var(--common-titlebar-height) + 0.2rem);
+}
+
+/* #endregion--titlebar-- */

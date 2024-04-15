@@ -1,0 +1,60 @@
+#bottom-tabbar :nth-child(4) p {
+    color: var(--text-color-blue);
+}
+
+#page-content {
+    overflow-y: scroll;
+    background-color: var(--common-page-bg-color);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#wxsite-type-list {
+    width: 100%;
+    background-color: white;
+    overflow-y: scroll;
+    /* 默认是块元素 */
+    display: grid;
+    /*代表有三列，每列是100px的宽度，也可以用百分比 */
+    grid-template-columns: repeat(3, 1fr);
+    /* 每一行的行高；（每行div的高度是多少） */
+    /* grid-template-rows:repeat(5, 1fr); */
+    /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+    /* 根据需要调整列宽，这里设置最小宽度为100px，自适应填充列宽 */
+    /* grid-template-rows: repeat(5, 1fr); */
+    /* 列与列之间的间距 */
+    grid-gap: 0.1rem;
+
+    /* 同时实现水平和垂直居中 */
+    /* place-items: center; */
+    align-items: center;
+    justify-items: center;
+}
+
+#wxsite-type-list>div {
+    display: flex;
+    border: 1px solid var(--text-color-blue);
+    border-radius: 0.1rem;
+
+    /* width: 0.8rem;
+    height: 0.6rem; */
+    width: 20vw;
+    height: 20vw;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    background-color: var(--text-color-blue);
+    box-shadow: 0 0.03rem 0.05rem var(--text-color-blue);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.14rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.active {
+    background-color: red;
+}

@@ -1,0 +1,58 @@
+.left_fix {
+    float: left;
+}
+
+.right_fix {
+    float: right;
+}
+
+.clear_fix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-size: 0;
+}
+
+a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.active-color {
+    /* 你想要的激活颜色 */
+    color: #1A8CFE;
+}
+
+.default-color {
+    /* 默认颜色 */
+    color: black;
+}
+
+input:focus {
+    outline: none;
+}
+
+.no-copy {
+    /*取消可选复制  */
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+}
+
+.no-active-bg,div {
+    /* 去除蓝色背景按压 */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

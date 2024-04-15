@@ -1,0 +1,112 @@
+#page-root {
+    position: relative;
+}
+
+/*#region--头部titlebar-- */
+#title-bar {
+    width: 100%;
+    height: var(--common-titlebar-height);
+    background-color: white;
+    border-bottom: 1px solid var(--common-page-bg-color);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+#title-bar-back {
+    width: var(--common-titlebar-height);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-bar-back>img {
+    width: 0.25rem;
+    height: 0.25rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#title-bar-name {
+    flex: 1;
+    height: 100%;
+    display: inline-block;
+    color: black;
+    font-size: 0.16rem;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: var(--common-titlebar-height);
+}
+
+/* #endregion--titlebar-- */
+/*#region--page-content-- */
+#page-content {
+    background-color: var(--common-page-bg-color);
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    padding-top: calc(var(--common-titlebar-height) + 0.45rem);
+    display: flex;
+    flex-direction: column;
+}
+
+/* 类型导航栏 */
+#tab-type-list {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid var(--common-page-bg-color);
+
+    box-sizing: border-box;
+    position: fixed;
+    top: var(--common-titlebar-height);
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.tab-type-item {
+    display: inline-block;
+    height: 0.45rem;
+    line-height: 0.45rem;
+    padding: 0 0.1rem;
+    text-align: center;
+    font-size: 0.14rem;
+    box-sizing: content-box;
+    letter-spacing: normal;
+    /*消除字符间距*/
+    word-spacing: normal;
+    /*设置标签、单词之间的空格长度*/
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.item-color-activite {
+    color: var(--text-color-blue);
+    font-weight: bold;
+}
+
+/* 文章列表 */
+#article-list-content {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+/*#endregion--page-content-- */

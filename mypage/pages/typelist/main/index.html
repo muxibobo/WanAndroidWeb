@@ -1,0 +1,75 @@
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no" />
+    <title>体系</title>
+    <link rel="stylesheet" href="../../../../mypage/common-css/common-const.css">
+    <link rel="stylesheet" href="../../../../mypage/common-css/reset.css">
+    <link rel="stylesheet" href="../../../../mypage/common-css/common-tabbar.css">
+    <link rel="stylesheet" href="./index.css">
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../../../mypage/common-js/myPhoneFlexible.js"></script>
+    <script src="../../../../mypage/common-js/appConstData.js"></script>
+    <script src="../../../../mypage/components/my-loading-dialog.js"></script>
+    <script src="../../../../mypage/utils/template-web.js"></script>
+    <script src="../../../../mypage/utils/DataUtil.js"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <div id="page-root">
+        <div id="page-content">
+            <!-- 体系页面 -->
+            <div id="tab-typeinfo-list">
+                <script id="type-info-template" type="text/html">
+                    {{each data itemDataP index}} 
+                      <div class="type-info-item" onclick="typeInfoItemClick('{{itemDataP}}')">
+                         <div class="type-info-item-left">
+                            <p>{{itemDataP.name}}</p>
+                             {{each itemDataP.children itemDataC index}} 
+                              <span class="type-info-tag">{{itemDataC.name}}</span>
+                             {{/each}}
+                         </div>
+                         <img class="type-info-item-right" src="../../../../img/tag64/black/double-right.png" alt="">
+                      </div>
+                    {{/each}} 
+                </script>
+            </div>
+        </div>
+        <div id="bottom-tabbar">
+            <a id="home-page-bar" class="default-color" href="../../home/main/index.html">
+                <img id="home-page-img" src="../../../../img/black128/zhuyexian.png" alt="首页" />
+                <p>首页</p>
+            </a>
+            <a id="typelist-page-bar" class="default-color" href="../../typelist/main/index.html">
+                <img id="typelist-page-img" src="../../../../img/blue128/wenjianxian.png" alt="体系" />
+                <p>体系</p>
+            </a>
+            <a id="tab-page-bar" class="default-color" href="../../tab/main/index.html">
+                <img id="tab-page-img" src="../../../../img/black128/faxianxian.png" alt="导航" />
+                <p>导航</p>
+            </a>
+            <a id="wxsite-page-bar" class="default-color" href="../../wxsite/main/index.html">
+                <img id="wxsite-page-img" src="../../../../img/black128/wechat.png" alt="公众号" />
+                <p>公众号</p>
+            </a>
+            <a id="my-page-bar" class="default-color" href="../../my/main/index.html">
+                <img id="my-page-img" src="../../../../img/black128/wodexian.png" alt="我的" />
+                <p>我的</p>
+            </a>
+        </div>
+    </div>
+    <script src="./index.js">
+
+    </script>
+    <script type="module" src="./index-module.js">
+
+    </script>
+</body>
+
+</html>

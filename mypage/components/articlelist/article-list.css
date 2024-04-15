@@ -1,0 +1,99 @@
+/* 文章列表 */
+
+.article-item {
+    font-size: 0.16rem;
+    box-shadow: 0 0.04rem 0.05rem rgba(0, 0, 0, 0.2);
+    margin: var(--common-margin);
+    padding: var(--common-padding);
+    border-radius: 0.05rem;
+    background-color: white;
+}
+
+.article-item-title,
+.article-item-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.12rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.article-item-title>span>span {
+    margin-left: 0.05rem;
+}
+
+.article-item-title>span:nth-child(2) {
+    border: 0.01rem solid var(--text-color-blue);
+    padding: 0.02rem;
+    color: var(--text-color-blue);
+    font-size: 0.1rem;
+    border-radius: 0.03rem;
+}
+
+.article-item-person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-item-person>img,
+.article-item-date>img {
+    width: 0.2rem;
+    height: 0.2rem;
+}
+
+.article-item-content {
+    font-size: 0.16rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* -----文本换行处理： */
+    /* overflow-wrap用来设置一个本来不能断开的字符串中插入换行符， word-wrap与overflow-wrap都可以达到同样的效果 */
+    overflow-wrap: break-word;
+    /*word-break 指定了怎样在单词内断行。对于中文或英文单词，可以使用此规则来强制换行 */
+    word-break: break-all;
+    /* white-space 保留空白符序列，进行换行。属性用于设置如何处理元素内的空白字符。确保换行也能在JSON数据中的任何位置发生  */
+    /* white-space: pre-wrap; */
+    padding: 0;
+    margin-top: 0.05rem;
+    margin-bottom: 0.05rem;
+    color: black;
+    cursor: pointer;
+}
+
+#article-load-more {
+    height: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.14rem;
+    cursor: pointer;
+}
+
+.article-collect {
+    display: inline-block;
+    width: 0.2rem;
+    height: 0.2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+    transition: scale(1) 0.5s;
+}
+
+.article-collect:active{
+    transform: scale(1.2);
+}
+
+.collect-default {
+    width: 0.2rem;
+    height: 0.2rem;
+    background-image: url("../../../img/black128/collect.png");
+}
+
+.collect-active {
+    width: 0.2rem;
+    height: 0.2rem;
+    background-image: url("../../../img/blue128/collect_red.png");
+}

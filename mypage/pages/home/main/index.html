@@ -1,0 +1,130 @@
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no" />
+    <title>首页</title>
+
+    <link rel="stylesheet" href="../../../../mypage/common-css/common-const.css">
+    <link rel="stylesheet" href="../../../../mypage/common-css/reset.css">
+    <link rel="stylesheet" href="../../../../mypage/common-css/common-tabbar.css">
+    <link rel="stylesheet" href="../../../../mypage/common-css/common-animation.css">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../../../mypage/common-js/myPhoneFlexible.js"></script>
+    <!-- 引入模板引擎 -->
+    <script src="../../../../mypage/utils/template-web.js"></script>
+    <script src="../../../../mypage/components/myAlertDialog.js"></script>
+    <script src="../../../../mypage/utils/TimeDateUtil.js"></script>
+    <script src="../../../../mypage/utils/DataUtil.js"></script>
+    <script src="../../../../mypage/common-js/appConstData.js"></script>
+    <script src="../../../../mypage/utils/collect.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../../../../mypage/components/swiper/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="../../../../mypage/components/swiper/swiper-bundle.min.js"></script>
+    <!-- 引入文章列表模板 -->
+    <link rel="stylesheet" href="../../../../mypage/components/articlelist/article-list.css">
+    <script src="../../../../mypage/components/articlelist/article-list.js"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <div id="page-root">
+        <div id="page-content">
+            <!-- 首页模块 -->
+            <div id="home-search-bar">
+                <a href="../search/index.html">
+                    <div>
+                        <img src="../../../../img/black128/sousuoxian.png" alt="搜索" />
+                        <span>点击输入关键字搜索</span>
+                    </div>
+                </a>
+            </div>
+            <div id="home-banner" class="swiper myBannerSwiper">
+                <!-- Swiper -->
+                <div class="swiper-wrapper banner-list-swiper">
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <script id="banner-list-template" type="text/html">
+                {{each data itemData index}} 
+                  <div class="swiper-slide">
+                    <!--  onclick="bannerItemClick(this,'{{itemData.url}}')" -->
+                    <a href="{{itemData.url}}" target="_blank">
+                      <img src="{{itemData.imagePath}}" alt="">
+                    </a>
+                  </div>
+                {{/each}} 
+            </script>
+            <!-- <div id="article-list-content">
+                <div id="article-list">
+                    <script id="article-list-template" type="text/html">
+                    {{each data.datas itemData index}} 
+            <div class="article-item" data-link="{{itemData.link}}">
+                <div class="article-item-title">
+                    <span class="article-item-person">
+                        <img src="../../../../img/icon_user_boy.png" alt="">
+                        <span>{{itemData.author ?itemData.author:itemData.shareUser}}</span>
+                    </span>
+                    <span class="article-item-source">{{itemData.superChapterName
+                        ?itemData.superChapterName+'/'+itemData.chapterName:itemData.chapterName}}</span>
+                </div>
+                <div class="article-item-content">{{itemData.title}} </div>
+                <div class="article-item-date">
+                    <span>{{itemData.niceDate,itemData.publishTime | $dateFormatFun}}</span>
+                    {{if itemData.collect}}
+                    <img class="article-collect collect-active" data-artid="{{itemData.id}}" alt="">
+                    {{else}}
+                    <img class="article-collect collect-default" data-artid="{{itemData.id}}" alt="">
+                    {{/if}}
+                </div>
+            </div>
+            {{/each}}
+            </script>
+                </div>
+                <p id="article-load-more">点击加载更多</p>
+            </div> -->
+            <div id="article-list-content">
+            </div>
+            <script>
+                addArticleListHtml();
+            </script>
+        </div>
+        <div id="bottom-tabbar">
+            <a id="home-page-bar" class="default-color" href="../../home/main/index.html">
+                <img id="home-page-img" src="../../../../img/blue128/zhuyexian.png" alt="首页" />
+                <p>首页</p>
+            </a>
+            <a id="typelist-page-bar" class="default-color" href="../../typelist/main/index.html">
+                <img id="typelist-page-img" src="../../../../img/black128/wenjianxian.png" alt="体系" />
+                <p>体系</p>
+            </a>
+            <a id="tab-page-bar" class="default-color" href="../../tab/main/index.html">
+                <img id="tab-page-img" src="../../../../img/black128/faxianxian.png" alt="导航" />
+                <p>导航</p>
+            </a>
+            <a id="wxsite-page-bar" class="default-color" href="../../wxsite/main/index.html">
+                <img id="wxsite-page-img" src="../../../../img/black128/wechat.png" alt="公众号" />
+                <p>公众号</p>
+            </a>
+            <a id="my-page-bar" class="default-color" href="../../my/main/index.html">
+                <img id="my-page-img" src="../../../../img/black128/wodexian.png" alt="我的" />
+                <p>我的</p>
+            </a>
+        </div>
+    </div>
+    <script src="./index.js">
+
+    </script>
+    <script type="module" src="./index-module.js">
+
+    </script>
+</body>
+
+</html>
