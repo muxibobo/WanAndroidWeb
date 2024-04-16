@@ -25,11 +25,10 @@ npm init --yes
 项目内部注释较多，是自己学习和习惯也方便小伙伴的阅读。
 
 如果你有一些更好的想法或建议，可以在GitHub里提交给我。  
-项目是开源的，不收取任何费用，如果这个项目有帮到你，或者你觉得很赞，也很感谢能够得到你的赞赏与支持!
+项目是开源的，不收取任何费用，如果这个项目有帮到你，或者你觉得很赞，也很感谢能够得到你的赞赏与支持!  
 
-![me1](https://github.com/muxibobo/WanAndroidWeb/assets/28428639/6c2bf83a-7635-4395-b6b9-cf0c07e6b7c5)
-
-![me2](https://github.com/muxibobo/WanAndroidWeb/assets/28428639/d2c83b21-ff85-4b76-8951-bc9c4959774e)
+<img src="https://github.com/muxibobo/WanAndroidWeb/assets/28428639/6c2bf83a-7635-4395-b6b9-cf0c07e6b7c5" width="250px">  
+<img src="https://github.com/muxibobo/WanAndroidWeb/assets/28428639/d2c83b21-ff85-4b76-8951-bc9c4959774e" width="250px">  
 
 **项目整体展示**
 
