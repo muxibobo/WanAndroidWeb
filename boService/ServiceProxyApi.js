@@ -166,7 +166,6 @@ myApp.all('/api/routeApi', async (req, res) => {
 // =====================普通接口区====================》
 //连接数据库 
 var mysql = require('mysql');//引入mysql库
-const e = require('express');
 let connectionConfigDb = {
     host: 'localhost',
     user: 'root',
