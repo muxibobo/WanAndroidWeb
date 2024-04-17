@@ -5,7 +5,7 @@
 
 该项目由“前端+后端”两部分代码组成。
 
-**后端：** 内部维护开发了一个node.js写的后端代码，用于创建代理服务获取数据，并返回给客户端，完美实现跨域请求的需求。因为鸿洋大神的开发api收藏和登录等操作需要携带用户密码等cookie信息，
+**后端：** 内部维护开发了一个node.js写的后端代码，用于创建代理服务获取数据，并返回给客户端，完美实现跨域请求的需求。因为鸿洋大神的开放api收藏和登录等操作需要携带用户密码等cookie信息，
 所以接口实现了'/api/routeApi'和'/api/proxyApi'两种方式。'/api/proxyApi'实现接口请求代理，'/api/routeApi'则可以携带cookie后转发二次请求。
 + 后端代码运行条件：  
 1.[运行环境node.js安装](https://blog.csdn.net/m0_60416689/article/details/135349451?spm=1001.2014.3001.5506)    
@@ -20,6 +20,7 @@ npm init --yes
 安装 mysql库，终端命令：npm install mysql  
 4.创建接口  
 5.点击ServiceProxyApi.js文件后右键“在集成终端中打开”，终端cmd中输入node ServiceProxyApi.js 启动服务  
+你要做的是确保步骤1,2,3,5就行，当然你要写自己的新接口，可以自己找到ServiceProxyApi.js文件依葫芦画瓢添加。  
 
 **前端：** 主要是原生写法。Html5+CSS3+JavaScript+jQuery的技术实现。使用了[模板引擎art-template.js](https://github.com/aui/art-template)实现数据和页面绑定显示，[Swiper轮播图组件库](https://www.swiper.com.cn/index.html)实现首页轮播图，在此非常感谢该这些开源库的作者。
 项目内部注释较多，是自己学习和习惯也方便小伙伴的阅读。
