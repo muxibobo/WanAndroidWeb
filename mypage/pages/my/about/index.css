@@ -1,15 +1,14 @@
 #page-root {
     position: relative;
-    height: 100%;
     background-color: var(--common-page-bg-color);
 }
 
 #page-content {
-    margin-top: var(--common-titlebar-height);
-    display: flex;
-    flex-direction: column;
+    background-color: var(--common-page-bg-color);
+    padding-top: var(--common-titlebar-height);
+    box-sizing: border-box;
+    height: 100%;
     overflow-y: scroll;
-    padding: 0.1rem;
 }
 
 #about-content-root {
@@ -17,6 +16,8 @@
     height: auto;
     background-color: white;
     border-radius: 0.1rem;
+    overflow: hidden;
+    margin:0.1rem;
 }
 
 #about-title {
